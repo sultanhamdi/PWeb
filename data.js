@@ -10,7 +10,7 @@ const tugasMatkul = [
     keterangan:
       "Pada pertemuan pertama diberikan tugas sebagai perkenalan dengan cara membuat CV HTML lalu di hosting.",
     screenshots: [
-      { nama: "Halaman CV", file: "../tm1/ss.png" },
+      { nama: "Halaman CV", file: "image/tm1/ss.png" },
     ],
     linkWeb: "https://sultanhamdi.github.io/pweb-week1/",
     linkSource: "https://github.com/sultanhamdi/pweb-week1",
@@ -21,7 +21,7 @@ const tugasMatkul = [
     keterangan:
       "Membuat tabel dan form login dengan bermodalkan html, sumber belajar w3school saat kelas matakuliah Pemograman Web Pertemuan ke-2.",
     screenshots: [
-      { nama: "Halaman Tabel", file: "../tm2/ss.png" },
+      { nama: "Halaman Tabel", file: "image/tm2/ss.png" },
     ],
     linkWeb: "https://sultanhamdi.github.io/pweb-week2/",
     linkSource: "https://github.com/sultanhamdi/pweb-week2",
@@ -32,10 +32,10 @@ const tugasMatkul = [
     keterangan:
       "Profil SMA Negeri 2 PLUS Panyabungan menggunakan HTML untuk membuat website sekolah asal (SMA), dengan navigasi 3 halaman: home, jurusan, dan kontak.",
     screenshots: [
-      { nama: "Halaman web sekolah asal", file: "../tm3/website sekolah asal.png" },
-      { nama: "Halaman beranda", file: "../tm3/index.png" },
-      { nama: "Halaman jurusan", file: "../tm3/jurusan.png" },
-      { nama: "Halaman kontak", file: "../tm3/kontak.png" },
+      { nama: "Halaman web sekolah asal", file: "image/tm3/website sekolah asal.png" },
+      { nama: "Halaman beranda", file: "image/tm3/index.png" },
+      { nama: "Halaman jurusan", file: "image/tm3/jurusan.png" },
+      { nama: "Halaman kontak", file: "image/tm3/kontak.png" },
     ],
     linkWeb: "https://sultanhamdi.github.io/pweb-week3/",
     linkSource: "https://github.com/sultanhamdi/pweb-week3",
@@ -46,10 +46,10 @@ const tugasMatkul = [
     keterangan:
       "Membuat sebuah website kursus menggunakan html dan CSS untuk styling.",
     screenshots: [
-      { nama: "Halaman beranda", file: "../tm4/beranda.png" },
-      { nama: "Halaman paket belajar", file: "../tm4/paket belajar.png" },
-      { nama: "Halaman program", file: "../tm4/program.png" },
-      { nama: "Halaman contact", file: "../tm4/contact.png" },
+      { nama: "Halaman beranda", file: "image/tm4/beranda.png" },
+      { nama: "Halaman paket belajar", file: "image/tm4/paket belajar.png" },
+      { nama: "Halaman program", file: "image/tm4/program.png" },
+      { nama: "Halaman contact", file: "image/tm4/contact.png" },
     ],
     linkWeb: "https://sultanhamdi.github.io/pweb-week4/",
     linkSource: "https://github.com/sultanhamdi/pweb-week4",
@@ -60,11 +60,11 @@ const tugasMatkul = [
     keterangan:
       "Membuat sebuah website kursus khusus pembelajaran programming dengan menggunakan HTML dan CSS.",
     screenshots: [
-      { nama: "Halaman beranda", file: "../tm5/beranda.png" },
-      { nama: "Halaman dashboard", file: "../tm5/dashboard.png" },
-      { nama: "Halaman pendaftaran", file: "../tm5/daftar.png" },
-      { nama: "Halaman admin panel", file: "../tm5/admin.png" },
-      { nama: "Halaman forum diskusi", file: "../tm5/forum.png" },
+      { nama: "Halaman beranda", file: "image/tm5/beranda.png" },
+      { nama: "Halaman dashboard", file: "image/tm5/dashboard.png" },
+      { nama: "Halaman pendaftaran", file: "image/tm5/daftar.png" },
+      { nama: "Halaman admin panel", file: "image/tm5/admin.png" },
+      { nama: "Halaman forum diskusi", file: "image/tm5/forum.png" },
     ],
     linkWeb: "https://sultanhamdi.github.io/pweb-week5/",
     linkSource: "https://github.com/sultanhamdi/pweb-week5",
