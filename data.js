@@ -32,7 +32,7 @@ const tugasMatkul = [
     keterangan:
       "Profil SMA Negeri 2 PLUS Panyabungan menggunakan HTML untuk membuat website sekolah asal (SMA), dengan navigasi 3 halaman: home, jurusan, dan kontak.",
     screenshots: [
-      { nama: "Halaman web sekolah asal", file: "image/tm3/website sekolah asal.png" },
+      { nama: "Halaman web sekolah asal", file: "image/tm3/website-sekolah-asal.png" },
       { nama: "Halaman beranda", file: "image/tm3/index.png" },
       { nama: "Halaman jurusan", file: "image/tm3/jurusan.png" },
       { nama: "Halaman kontak", file: "image/tm3/kontak.png" },
@@ -47,7 +47,7 @@ const tugasMatkul = [
       "Membuat sebuah website kursus menggunakan html dan CSS untuk styling.",
     screenshots: [
       { nama: "Halaman beranda", file: "image/tm4/beranda.png" },
-      { nama: "Halaman paket belajar", file: "image/tm4/paket belajar.png" },
+      { nama: "Halaman paket belajar", file: "image/tm4/paket-belajar.png" },
       { nama: "Halaman program", file: "image/tm4/program.png" },
       { nama: "Halaman contact", file: "image/tm4/contact.png" },
     ],
