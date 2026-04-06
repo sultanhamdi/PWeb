@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Detail tugas mingguan — Pemrograman Web, Sultan Hamdi Jailani Daulay, ITS." />
+  <meta name="theme-color" content="#f0eef6" />
+  <title>Detail Tugas — Pemrograman Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Noise texture overlay -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <div class="logo-icon" aria-hidden="true">PW</div>
+        <span>Pemrograman Web - Sultan Hamdi</span>
+      </a>
+      <ul class="navbar-links">
+        <li><a href="index.html" id="nav-home">Beranda</a></li>
+        <li><a href="index.html#tasks" id="nav-tasks">Tugas</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <!-- Back button -->
+      <div class="detail-back" id="detail-back">
+        <a href="index.html" class="btn btn-secondary" id="btn-back-home">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5"/><polyline points="12 19 5 12 12 5"/>
+          </svg>
+          Kembali ke Beranda
+        </a>
+      </div>
+
+      <!-- Task detail header — populated by detail.js -->
+      <section class="detail-header glass" id="detail-header">
+        <span class="week-badge detail-badge" id="detail-badge"></span>
+        <h1 class="detail-title" id="detail-title">Memuat…</h1>
+        <p class="detail-desc" id="detail-desc"></p>
+        <div class="detail-links" id="detail-links"></div>
+      </section>
+
+      <!-- Screenshot gallery — populated by detail.js -->
+      <section class="detail-gallery-section" id="gallery-section">
+        <div class="section-header">
+          <h2><span class="accent">Screenshot</span> Tugas</h2>
+          <p id="gallery-count"></p>
+        </div>
+        <div class="detail-gallery" id="detail-gallery"></div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="current-year"></span> Sultan Hamdi Jailani Daulay &middot; Pemrograman Web — <a href="https://www.its.ac.id" target="_blank" rel="noopener noreferrer">ITS</a></p>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-top -->
+  <button class="scroll-top" id="scroll-top-btn" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5"/><polyline points="5 12 12 5 19 12"/>
+    </svg>
+  </button>
+
+  <!-- Lightbox overlay -->
+  <div class="lightbox-overlay" id="lightbox-overlay" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="Screenshot preview" />
+    <p class="lightbox-caption" id="lightbox-caption"></p>
+  </div>
+
+  <!-- Scripts: data first, then logic -->
+  <script src="data.js"></script>
+  <script src="detail.js"></script>
+</body>
+</html>

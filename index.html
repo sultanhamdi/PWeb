@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portal pengumpulan tugas mingguan mata kuliah Pemrograman Web — Sultan Hamdi Jailani Daulay, Rekayasa Kecerdasan Artifisial, ITS." />
+  <meta name="theme-color" content="#f0eef6" />
+  <title>Pemrograman Web — Sultan Hamdi Jailani Daulay</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Noise texture overlay -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        <div class="logo-icon" aria-hidden="true">PW</div>
+        <span>Pemrograman Web - Sultan Hamdi</span>
+      </a>
+      <ul class="navbar-links">
+        <li><a href="#hero" class="active" id="nav-home">Beranda</a></li>
+        <li><a href="#tasks" id="nav-tasks">Tugas</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ======== HERO / PROFILE ======== -->
+    <section class="hero container" id="hero">
+      <div class="profile-card glass">
+        <div class="profile-image-wrapper">
+          <img src="profile.jpeg" alt="Foto Sultan Hamdi Jailani Daulay" class="profile-image" id="profile-img" />
+        </div>
+
+        <h1 class="profile-name">Sultan Hamdi Jailani Daulay</h1>
+
+        <p class="profile-detail nim">5054241013</p>
+        <p class="profile-detail"><strong>Jurusan:</strong> Rekayasa Kecerdasan Artifisial</p>
+        <p class="profile-detail"><strong>Universitas:</strong> Institut Teknologi Sepuluh Nopember</p>
+
+        <hr class="divider" />
+
+        <p class="profile-bio">
+          Repositori dan log pengerjaan tugas mingguan mata kuliah Pemrograman Web.
+        </p>
+      </div>
+    </section>
+
+    <!-- ======== TASK SECTION ======== -->
+    <section class="task-section container" id="tasks">
+      <div class="section-header">
+        <h2>Log <span class="accent">Tugas Mingguan</span></h2>
+        <p>Daftar tugas yang telah dikerjakan, diurutkan dari yang terbaru.</p>
+      </div>
+
+      <!-- Cards will be injected here by script.js -->
+      <div id="task-container"></div>
+    </section>
+  </main>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="current-year"></span> Sultan Hamdi Jailani Daulay &middot; Pemrograman Web — <a
+          href="https://www.its.ac.id" target="_blank" rel="noopener noreferrer">ITS</a></p>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-top -->
+  <button class="scroll-top" id="scroll-top-btn" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5" />
+      <polyline points="5 12 12 5 19 12" />
+    </svg>
+  </button>
+
+  <!-- Scripts: data first, then logic -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
