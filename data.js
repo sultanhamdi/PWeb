@@ -69,4 +69,17 @@ const tugasMatkul = [
     linkWeb: "https://sultanhamdi.github.io/pweb-week5/",
     linkSource: "https://github.com/sultanhamdi/pweb-week5",
   },
+  {
+    pekan: 6,
+    judul: "JavaScript: form interaktif, Kode Pos & Katalog",
+    keterangan:
+      "Membuat sebuah website dengan menggunakan HTML, CSS, dan JavaScript.",
+    screenshots: [
+      { nama: "Halaman form", file: "image/tm6/form.png" },
+      { nama: "Halaman kode pos", file: "image/tm6/kode.png" },
+      { nama: "Halaman katalog", file: "image/tm6/katalog.png" },
+    ],
+    linkWeb: "https://sultanhamdi.github.io/pweb-week6/",
+    linkSource: "https://github.com/sultanhamdi/pweb-week6",
+  },
 ];
