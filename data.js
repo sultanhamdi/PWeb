@@ -82,4 +82,16 @@ const tugasMatkul = [
     linkWeb: "https://sultanhamdi.github.io/pweb-week6/",
     linkSource: "https://github.com/sultanhamdi/pweb-week6",
   },
+  {
+    pekan: 7,
+    judul: "Membuat Web dengan menggunakan bootstrap",
+    keterangan:
+      "Membuat sebuah website menggunakan bootstrap.",
+    screenshots: [
+      { nama: "beranda", file: "image/tm7/beranda.png" },
+      { nama: "login/register", file: "image/tm7/login.png" },
+    ],
+    linkWeb: "https://sultanhamdi.github.io/pweb-week7/",
+    linkSource: "https://github.com/sultanhamdi/pweb-week7",
+  },
 ];
