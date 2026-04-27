@@ -1325,6 +1325,51 @@ main {
   transform: translateX(4px);
 }
 
+/* ---- Links Row (infografis LEFT + actions RIGHT) ---- */
+.ets-links-row {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 24px;
+  align-items: start;
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(24px);
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 0.1s;
+}
+
+.ets-links-row .ets-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ets-infografis {
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  transition: var(--transition);
+  border-radius: var(--border-radius);
+}
+
+.ets-infografis:hover {
+  transform: translateY(-4px);
+  border-color: var(--glass-border-hover);
+  box-shadow:
+    0 16px 48px rgba(108, 99, 255, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.ets-infografis img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.ets-infografis:hover img {
+  transform: scale(1.03);
+}
+
 /* =========================================
    ETS PAGE — RESPONSIVE
    ========================================= */
@@ -1346,6 +1391,10 @@ main {
 
   .ets-gallery {
     gap: 12px;
+  }
+
+  .ets-links-row {
+    grid-template-columns: 1fr;
   }
 }
 
