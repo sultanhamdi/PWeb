@@ -72,16 +72,52 @@
 
     // Render links
     if (links) {
-      links.innerHTML = `
-        <a href="${task.linkWeb}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="detail-btn-web">
-          ${ICONS.globe}
-          Kunjungi Web
-        </a>
-        <a href="${task.linkSource}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="detail-btn-source">
-          ${ICONS.code}
-          Lihat Source Code
-        </a>
+      var linksHTML = "";
+      if (task.linkWeb) {
+        linksHTML += `
+          <a href="${task.linkWeb}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="detail-btn-web">
+            ${ICONS.globe}
+            Kunjungi Web
+          </a>
+        `;
+      }
+      if (task.linkSource) {
+        linksHTML += `
+          <a href="${task.linkSource}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="detail-btn-source">
+            ${ICONS.code}
+            Lihat Source Code
+          </a>
+        `;
+      }
+      links.innerHTML = linksHTML;
+    }
+  }
+
+  /**
+   * Render the document embed (if available)
+   */
+  function renderDocs(task) {
+    var docsSection = document.getElementById("docs-section");
+    var docsContainer = document.getElementById("detail-docs");
+
+    if (!docsSection || !docsContainer) return;
+
+    if (task.linkDocsEmbed) {
+      docsSection.style.display = "block";
+      docsContainer.innerHTML = `
+        <iframe 
+          src="${task.linkDocsEmbed}" 
+          width="100%" 
+          height="600px" 
+          frameborder="0" 
+          allowfullscreen="true" 
+          mozallowfullscreen="true" 
+          webkitallowfullscreen="true">
+        </iframe>
       `;
+    } else {
+      docsSection.style.display = "none";
+      docsContainer.innerHTML = "";
     }
   }
 
@@ -89,6 +125,7 @@
    * Render the screenshot gallery
    */
   function renderGallery(task) {
+    var gallerySection = document.getElementById("gallery-section");
     var gallery = document.getElementById("detail-gallery");
     var countEl = document.getElementById("gallery-count");
 
@@ -96,20 +133,15 @@
 
     var screenshots = task.screenshots || [];
 
-    if (countEl) {
-      countEl.textContent = screenshots.length + " screenshot" + (screenshots.length !== 1 ? "s" : "") + " tersedia";
+    if (screenshots.length === 0) {
+      if (gallerySection) gallerySection.style.display = "none";
+      return;
+    } else {
+      if (gallerySection) gallerySection.style.display = "block";
     }
 
-    if (screenshots.length === 0) {
-      gallery.innerHTML = `
-        <div class="empty-state">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
-          </svg>
-          <p>Belum ada screenshot untuk tugas ini.</p>
-        </div>
-      `;
-      return;
+    if (countEl) {
+      countEl.textContent = screenshots.length + " screenshot" + (screenshots.length !== 1 ? "s" : "") + " tersedia";
     }
 
     gallery.innerHTML = screenshots
@@ -247,6 +279,7 @@
     }
 
     renderHeader(task);
+    renderDocs(task);
     renderGallery(task);
     initLightbox();
     initScrollTop();

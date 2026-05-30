@@ -94,4 +94,12 @@ const tugasMatkul = [
     linkWeb: "https://sultanhamdi.github.io/pweb-week7/",
     linkSource: "https://github.com/sultanhamdi/pweb-week7",
   },
+  {
+    pekan: 11,
+    judul: "Proposal Final Project",
+    keterangan: "Proposal final project mata kuliah Pemrograman Web.",
+    screenshots: [],
+    linkDocsEmbed: "https://docs.google.com/document/d/e/2PACX-1vTCJEr4v1itJEe2geF5c0i46YlQVktKjZdBgvCYVsxP95-pepnBX5yrzGVoiaH9-A/pub?embedded=true",
+    linkSource: "",
+  },
 ];

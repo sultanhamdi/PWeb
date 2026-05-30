@@ -51,8 +51,9 @@
               id="btn-screenshot-pekan-${task.pekan}"
             >
               ${ICONS.image}
-              Lihat Screenshot
+              Lihat Detail
             </a>
+            ${task.linkWeb ? `
             <a
               href="${task.linkWeb}"
               target="_blank"
@@ -63,6 +64,8 @@
               ${ICONS.globe}
               Kunjungi Web
             </a>
+            ` : ""}
+            ${task.linkSource ? `
             <a
               href="${task.linkSource}"
               target="_blank"
@@ -73,6 +76,7 @@
               ${ICONS.code}
               Lihat Source
             </a>
+            ` : ""}
           </div>
         </div>
       </article>
