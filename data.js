@@ -113,4 +113,17 @@ const tugasMatkul = [
     dokumenSpesifikasi: "https://docs.google.com/document/d/1Du9I_vbg-nxuzj-MvnFzWeaj-2PRwACV/edit?usp=sharing&ouid=102602476768581684536&rtpof=true&sd=true",
     linkSource: "https://github.com/Sjankaczar/GRID",
   },
+  {
+    pekan: 13,
+    judul: "Membuat Tampilan Final Project",
+    keterangan: "Kelompok :<br>Sultan Hamdi Jailani Daulay (5054241013)<br>Rafli Djanuar Anangsyah (5054241025)<br>Kelas : PWEB (N) / RKA<br><br>Title Aplikasi : GRID : Game Repository & Indie Devlog<br><br>Membuat tampilan Landing Page, Register, dan Login",
+    screenshots: [
+      { nama: "Landing Page", file: "image/tm13/landing_page1.png" },
+      { nama: "Landing Page", file: "image/tm13/landing_page2.png" },
+      { nama: "Register", file: "image/tm13/register.png" },
+      { nama: "Login", file: "image/tm13/login.png" }
+    ],
+    dokumenSpesifikasi: "https://docs.google.com/document/d/1Du9I_vbg-nxuzj-MvnFzWeaj-2PRwACV/edit?usp=sharing&ouid=102602476768581684536&rtpof=true&sd=true",
+    linkSource: "https://github.com/Sjankaczar/GRID",
+  },
 ];
