@@ -10,6 +10,7 @@
   const ICONS = {
     globe: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`,
     code: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>`,
+    document: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>`,
   };
 
   /**
@@ -65,7 +66,7 @@
 
     if (badge) badge.textContent = "Pekan " + task.pekan;
     if (title) title.textContent = task.judul;
-    if (desc) desc.textContent = task.keterangan;
+    if (desc) desc.innerHTML = task.keterangan;
 
     // Update page title
     document.title = "Pekan " + task.pekan + " — " + task.judul;
@@ -78,6 +79,14 @@
           <a href="${task.linkWeb}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="detail-btn-web">
             ${ICONS.globe}
             Kunjungi Web
+          </a>
+        `;
+      }
+      if (task.dokumenSpesifikasi) {
+        linksHTML += `
+          <a href="${task.dokumenSpesifikasi}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="detail-btn-docs">
+            ${ICONS.document}
+            Dokumen Spesifikasi
           </a>
         `;
       }
