@@ -126,4 +126,21 @@ const tugasMatkul = [
     dokumenSpesifikasi: "https://docs.google.com/document/d/1Du9I_vbg-nxuzj-MvnFzWeaj-2PRwACV/edit?usp=sharing&ouid=102602476768581684536&rtpof=true&sd=true",
     linkSource: "https://github.com/Sjankaczar/GRID",
   },
+  {
+    pekan: 14,
+    judul: "Membuat Dashboard Final Project",
+    keterangan: "Kelompok :<br>Sultan Hamdi Jailani Daulay (5054241013)<br>Rafli Djanuar Anangsyah (5054241025)<br>Kelas : PWEB (N) / RKA<br><br>Title Aplikasi : GRID : Game Repository & Indie Devlog<br><br>Membuat tampilan Dashboard Admin dan Member",
+    screenshots: [
+      { nama: "Admin Dashboard", file: "image/tm14/admin_dashboard.png" },
+      { nama: "Admin Proyek", file: "image/tm14/admin_proyek.png" },
+      { nama: "Admin Aset", file: "image/tm14/admin_aset.png" },
+      { nama: "Member Dashboard", file: "image/tm14/member_dashboard.png" },
+      { nama: "Member Proyek", file: "image/tm14/member_proyek.png" },
+      { nama: "Member Aset", file: "image/tm14/member_aset.png" },
+      { nama: "Member Devlog", file: "image/tm14/member_devlog.png" },
+      { nama: "Member Upload Aset", file: "image/tm14/member_upload_aset.png" }
+    ],
+    dokumenSpesifikasi: "https://docs.google.com/document/d/1Du9I_vbg-nxuzj-MvnFzWeaj-2PRwACV/edit?usp=sharing&ouid=102602476768581684536&rtpof=true&sd=true",
+    linkSource: "https://github.com/Sjankaczar/GRID",
+  },
 ];

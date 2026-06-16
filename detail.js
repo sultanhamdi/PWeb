@@ -69,7 +69,7 @@
     if (desc) desc.innerHTML = task.keterangan;
 
     // Update page title
-    document.title = "Pekan " + task.pekan + " — " + task.judul;
+    document.title = "Pekan " + task.pekan + " - " + task.judul;
 
     // Render links
     if (links) {
@@ -162,7 +162,7 @@
             <div class="gallery-item-img-wrapper">
               <img
                 src="${imgSrc}"
-                alt="${label} — ${task.judul}"
+                alt="${label} - ${task.judul}"
                 loading="lazy"
                 onerror="this.src='https://placehold.co/800x450/e8e0f0/888?text=Gagal+Memuat'"
               />

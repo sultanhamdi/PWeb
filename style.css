@@ -12,7 +12,7 @@
 }
 
 :root {
-  /* Color Tokens — Bright Glassmorphism */
+  /* Color Tokens - Bright Glassmorphism */
   --bg-primary: #f0eef6;
   --glass-bg: rgba(255, 255, 255, 0.30);
   --glass-bg-hover: rgba(255, 255, 255, 0.45);
@@ -704,7 +704,7 @@ main {
 }
 
 /* =========================================
-   TASK CARD — 3-BUTTON LAYOUT
+   TASK CARD - 3-BUTTON LAYOUT
    ========================================= */
 .task-card-actions--triple {
   display: grid;
@@ -732,7 +732,7 @@ main {
 }
 
 /* =========================================
-   DETAIL PAGE — BACK BUTTON
+   DETAIL PAGE - BACK BUTTON
    ========================================= */
 .detail-back {
   padding: 32px 0 8px;
@@ -745,7 +745,7 @@ main {
 }
 
 /* =========================================
-   DETAIL PAGE — HEADER CARD
+   DETAIL PAGE - HEADER CARD
    ========================================= */
 .detail-header {
   padding: 40px;
@@ -811,7 +811,7 @@ main {
 }
 
 /* =========================================
-   DETAIL PAGE — SCREENSHOT GALLERY
+   DETAIL PAGE - SCREENSHOT GALLERY
    ========================================= */
 .detail-gallery-section {
   padding-bottom: 40px;
@@ -819,8 +819,10 @@ main {
 
 .detail-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  gap: 24px;
+  grid-template-columns: 1fr;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 32px;
 }
 
 .gallery-item {
@@ -855,14 +857,13 @@ main {
 .gallery-item-img-wrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
   overflow: hidden;
 }
 
 .gallery-item-img-wrapper img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   transition: transform 0.5s ease;
   display: block;
 }
@@ -969,7 +970,7 @@ main {
 }
 
 /* =========================================
-   RESPONSIVE — DETAIL PAGE
+   RESPONSIVE - DETAIL PAGE
    ========================================= */
 
 /* Tablet */
@@ -984,7 +985,7 @@ main {
   }
 
   .detail-gallery {
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: 1fr;
     gap: 16px;
   }
 
@@ -1036,7 +1037,7 @@ main {
 }
 
 /* =========================================
-   ETS PAGE — HEADER
+   ETS PAGE - HEADER
    ========================================= */
 .ets-header {
   text-align: center;
@@ -1061,7 +1062,7 @@ main {
 }
 
 /* =========================================
-   ETS PAGE — TWO-COLUMN CONTENT
+   ETS PAGE - TWO-COLUMN CONTENT
    ========================================= */
 .ets-content {
   display: grid;
@@ -1218,7 +1219,7 @@ main {
 }
 
 /* =========================================
-   ETS PAGE — ACTION LINK CARDS
+   ETS PAGE - ACTION LINK CARDS
    ========================================= */
 .ets-actions-title {
   font-size: 1.25rem;
@@ -1371,7 +1372,7 @@ main {
 }
 
 /* =========================================
-   ETS PAGE — RESPONSIVE
+   ETS PAGE - RESPONSIVE
    ========================================= */
 
 /* Tablet */
@@ -1443,7 +1444,7 @@ main {
 }
 
 /* =========================================
-   ETS PAGE — EMBED SECTIONS (PPT & VIDEO)
+   ETS PAGE - EMBED SECTIONS (PPT & VIDEO)
    ========================================= */
 .ets-embed-section {
   margin-bottom: 40px;
@@ -1573,7 +1574,7 @@ main {
 }
 
 /* =========================================
-   ETS PAGE — OUR TEAM
+   ETS PAGE - OUR TEAM
    ========================================= */
 .ets-team-section {
   margin-bottom: 40px;
