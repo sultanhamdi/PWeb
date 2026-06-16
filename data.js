@@ -143,4 +143,17 @@ const tugasMatkul = [
     dokumenSpesifikasi: "https://docs.google.com/document/d/1Du9I_vbg-nxuzj-MvnFzWeaj-2PRwACV/edit?usp=sharing&ouid=102602476768581684536&rtpof=true&sd=true",
     linkSource: "https://github.com/Sjankaczar/GRID",
   },
+  {
+    pekan: 15,
+    judul: "Membuat Fitur Lanjutan Final Project",
+    keterangan: "Kelompok :<br>Sultan Hamdi Jailani Daulay (5054241013)<br>Rafli Djanuar Anangsyah (5054241025)<br>Kelas : PWEB (N) / RKA<br><br>Title Aplikasi : GRID : Game Repository & Indie Devlog<br><br>Membuat fitur Manajemen User, Kanban Board, Bug Tracker, dan Laporan Proyek",
+    screenshots: [
+      { nama: "Manajemen User", file: "image/tm15/manajemen_user.png" },
+      { nama: "Kanban Board", file: "image/tm15/kanban.png" },
+      { nama: "Bug Tracker", file: "image/tm15/bug_tracker.png" },
+      { nama: "Laporan Proyek", file: "image/tm15/laporan_proyek.png" }
+    ],
+    dokumenSpesifikasi: "https://docs.google.com/document/d/1Du9I_vbg-nxuzj-MvnFzWeaj-2PRwACV/edit?usp=sharing&ouid=102602476768581684536&rtpof=true&sd=true",
+    linkSource: "https://github.com/Sjankaczar/GRID",
+  },
 ];
